@@ -7,39 +7,86 @@ document.addEventListener("DOMContentLoaded", function () {
   // INTERSECTION OBSERVER FOR ANIMATIONS
   // ============================================
 
-  const animateElements = document.querySelectorAll("[data-animate]");
-
   const observerOptions = {
-    root: null,
     threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px",
+    rootMargin: "0px 0px -100px 0px",
   };
 
-  const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const element = entry.target;
-        const animationType = element.getAttribute("data-animate");
-
-        // Add animation class based on type
-        element.classList.add("animated", animationType);
-
-        // Add animation delay if specified
-        const delay = element.getAttribute("data-delay");
-        if (delay) {
-          element.style.animationDelay = delay + "ms";
+        const animationType = entry.target.getAttribute("data-animate");
+        if (animationType) {
+          entry.target.style.animation = `${animationType} 0.8s ease forwards`;
+          observer.unobserve(entry.target);
         }
-
-        // Unobserve after animation
-        observer.unobserve(element);
       }
     });
   }, observerOptions);
 
   // Observe all elements with data-animate attribute
-  animateElements.forEach((element) => {
-    observer.observe(element);
+  document.querySelectorAll("[data-animate]").forEach((el) => {
+    el.style.opacity = "0";
+    observer.observe(el);
   });
+
+  // Add CSS animations
+  const style = document.createElement("style");
+  style.textContent = `
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  `;
+  document.head.appendChild(style);
 
   // ============================================
   // PARALLAX EFFECT

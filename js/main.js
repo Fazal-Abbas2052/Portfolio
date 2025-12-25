@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setActiveLink();
 
   // ============================================
-  // TYPING EFFECT
+  // FADE EFFECT FOR ROLES
   // ============================================
 
   const typingElement = document.getElementById("typingText");
@@ -121,38 +121,34 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     let roleIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 100;
+    let fadeDuration = 500; // Fade duration in ms
+    let displayDuration = 3000; // How long to display each role
 
-    function type() {
-      const currentRole = roles[roleIndex];
+    function fadeRole() {
+      // Fade out
+      typingElement.style.transition = `opacity ${fadeDuration}ms ease-in-out`;
+      typingElement.style.opacity = "0";
 
-      if (isDeleting) {
-        typingElement.textContent = currentRole.substring(0, charIndex - 1);
-        charIndex--;
-        typingSpeed = 50;
-      } else {
-        typingElement.textContent = currentRole.substring(0, charIndex + 1);
-        charIndex++;
-        typingSpeed = 100;
-      }
-
-      if (!isDeleting && charIndex === currentRole.length) {
-        // Pause at end
-        typingSpeed = 2000;
-        isDeleting = true;
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
+      setTimeout(() => {
+        // Change text while hidden
+        typingElement.textContent = roles[roleIndex];
         roleIndex = (roleIndex + 1) % roles.length;
-        typingSpeed = 500;
-      }
 
-      setTimeout(type, typingSpeed);
+        // Fade in
+        typingElement.style.opacity = "1";
+
+        // Schedule next fade
+        setTimeout(fadeRole, displayDuration);
+      }, fadeDuration);
     }
 
-    // Start typing effect after a short delay
-    setTimeout(type, 1000);
+    // Set initial text and start fading
+    typingElement.textContent = roles[0];
+    roleIndex = 1;
+    typingElement.style.opacity = "1";
+    typingElement.style.transition = `opacity ${fadeDuration}ms ease-in-out`;
+
+    setTimeout(fadeRole, displayDuration);
   }
 
   // ============================================

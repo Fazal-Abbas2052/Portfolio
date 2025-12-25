@@ -330,7 +330,7 @@
 .profile-img {
   width: 100%;
   height: auto;
-  /* border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; */
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   position: relative;
   z-index: 1;
   display: block;
