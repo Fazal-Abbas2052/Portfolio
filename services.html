@@ -1,277 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Services - Web and Mobile Development by Fazal Abbas" />
-  <title>Services - Fazal Abbas</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Services - Web and Mobile Development by Fazal Abbas"
+    />
+    <title>Services - Fazal Abbas</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="./css/global.css" />
-  <link rel="stylesheet" href="./css/services.css" />
-  <link rel="stylesheet" href="./css/responsive.css" />
-</head>
-<body>
-  <!-- NAVIGATION -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <div class="nav-wrapper">
-        <a href="index.html" class="logo">
-          <span class="logo-text">Fazal <span class="logo-accent">Abbas</span></span>
-        </a>
-        <ul class="nav-menu" id="navMenu">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
-          <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-        <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk</a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <div class="container">
-      <h1>Services</h1>
-      <p>Comprehensive solutions for your digital needs</p>
-    </div>
-  </section>
-
-  <!-- SERVICES SECTION -->
-  <section class="services-grid section">
-    <div class="container">
-      <div class="section-header">
-        <h2 data-animate="fadeIn">What I Offer</h2>
-        <p data-animate="fadeIn">Professional services tailored to your project requirements</p>
-      </div>
-
-      <div class="services-list">
-        <!-- Service 1 -->
-        <div class="service-card" data-animate="slideInUp">
-          <div class="service-icon">
-            <i class="fas fa-mobile-alt"></i>
-          </div>
-          <h3>Mobile App Development</h3>
-          <p>Build powerful native and cross-platform mobile applications using Flutter and React Native. 
-          Fast development, beautiful UI, and seamless performance across iOS and Android.</p>
-          <div class="service-features">
-            <span><i class="fas fa-check"></i> Flutter Development</span>
-            <span><i class="fas fa-check"></i> React Native</span>
-            <span><i class="fas fa-check"></i> App Deployment</span>
-            <span><i class="fas fa-check"></i> Maintenance & Support</span>
-          </div>
-          <a href="contact.html" class="btn btn-outline btn-small">Get Started</a>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="service-card" data-animate="slideInUp" style="animation-delay: 0.1s">
-          <div class="service-icon">
-            <i class="fas fa-globe"></i>
-          </div>
-          <h3>Web Development</h3>
-          <p>Create responsive, modern web applications using cutting-edge technologies. 
-          From frontend design to backend architecture, I deliver complete web solutions.</p>
-          <div class="service-features">
-            <span><i class="fas fa-check"></i> React & MERN Stack</span>
-            <span><i class="fas fa-check"></i> Responsive Design</span>
-            <span><i class="fas fa-check"></i> SEO Optimization</span>
-            <span><i class="fas fa-check"></i> Web Performance</span>
-          </div>
-          <a href="contact.html" class="btn btn-outline btn-small">Get Started</a>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="service-card" data-animate="slideInUp" style="animation-delay: 0.2s">
-          <div class="service-icon">
-            <i class="fas fa-database"></i>
-          </div>
-          <h3>Backend Development</h3>
-          <p>Build scalable, secure backend systems with robust APIs. 
-          Experience with Node.js, PHP Symfony, and database design for enterprise applications.</p>
-          <div class="service-features">
-            <span><i class="fas fa-check"></i> REST & GraphQL APIs</span>
-            <span><i class="fas fa-check"></i> Database Design</span>
-            <span><i class="fas fa-check"></i> Server Management</span>
-            <span><i class="fas fa-check"></i> Security Implementation</span>
-          </div>
-          <a href="contact.html" class="btn btn-outline btn-small">Get Started</a>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="service-card" data-animate="slideInUp" style="animation-delay: 0.3s">
-          <div class="service-icon">
-            <i class="fas fa-cogs"></i>
-          </div>
-          <h3>Full-Stack Solutions</h3>
-          <p>End-to-end development from concept to deployment. 
-          Complete web and mobile application development with modern architecture and best practices.</p>
-          <div class="service-features">
-            <span><i class="fas fa-check"></i> Project Planning</span>
-            <span><i class="fas fa-check"></i> Architecture Design</span>
-            <span><i class="fas fa-check"></i> Development & Testing</span>
-            <span><i class="fas fa-check"></i> Deployment & Monitoring</span>
-          </div>
-          <a href="contact.html" class="btn btn-outline btn-small">Get Started</a>
-        </div>
-
-        <!-- Service 5 -->
-        <div class="service-card" data-animate="slideInUp" style="animation-delay: 0.4s">
-          <div class="service-icon">
-            <i class="fas fa-paint-brush"></i>
-          </div>
-          <h3>UI/UX Design</h3>
-          <p>Beautiful, intuitive user interfaces with exceptional user experience. 
-          Design thinking approach to create engaging and accessible digital products.</p>
-          <div class="service-features">
-            <span><i class="fas fa-check"></i> UI Design</span>
-            <span><i class="fas fa-check"></i> User Research</span>
-            <span><i class="fas fa-check"></i> Prototyping</span>
-            <span><i class="fas fa-check"></i> Design Systems</span>
-          </div>
-          <a href="contact.html" class="btn btn-outline btn-small">Get Started</a>
-        </div>
-
-        <!-- Service 6 -->
-        <div class="service-card" data-animate="slideInUp" style="animation-delay: 0.5s">
-          <div class="service-icon">
-            <i class="fas fa-sync-alt"></i>
-          </div>
-          <h3>Maintenance & Support</h3>
-          <p>Keep your applications running smoothly with ongoing maintenance and technical support. 
-          Bug fixes, performance optimization, and feature updates included.</p>
-          <div class="service-features">
-            <span><i class="fas fa-check"></i> Bug Fixes</span>
-            <span><i class="fas fa-check"></i> Performance Optimization</span>
-            <span><i class="fas fa-check"></i> Feature Updates</span>
-            <span><i class="fas fa-check"></i> 24/7 Support</span>
-          </div>
-          <a href="contact.html" class="btn btn-outline btn-small">Get Started</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING SECTION -->
-  <section class="pricing-section section">
-    <div class="container">
-      <h2 class="section-heading" data-animate="fadeIn">Flexible Pricing</h2>
-      <p class="section-subtitle" data-animate="fadeIn">Choose the plan that works best for you</p>
-      
-      <div class="pricing-cards">
-        <div class="pricing-card" data-animate="slideInUp">
-          <h3>Starter</h3>
-          <p class="price">Custom</p>
-          <p class="description">Perfect for small projects and MVPs</p>
-          <ul class="pricing-features">
-            <li><i class="fas fa-check"></i> Single Page Application</li>
-            <li><i class="fas fa-check"></i> Basic Features</li>
-            <li><i class="fas fa-check"></i> 1 Month Support</li>
-            <li><i class="fas fa-times"></i> Unlimited Revisions</li>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="logo">
+            <span class="logo-text"
+              >Fazal <span class="logo-accent">Abbas</span></span
+            >
+          </a>
+          <ul class="nav-menu" id="navMenu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link active">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
           </ul>
-          <a href="contact.html" class="btn btn-outline">Inquire Now</a>
-        </div>
-
-        <div class="pricing-card featured" data-animate="slideInUp" style="animation-delay: 0.1s">
-          <span class="badge">Popular</span>
-          <h3>Professional</h3>
-          <p class="price">Custom</p>
-          <p class="description">For scalable applications</p>
-          <ul class="pricing-features">
-            <li><i class="fas fa-check"></i> Full-Stack Application</li>
-            <li><i class="fas fa-check"></i> Advanced Features</li>
-            <li><i class="fas fa-check"></i> 3 Months Support</li>
-            <li><i class="fas fa-check"></i> Unlimited Revisions</li>
-          </ul>
-          <a href="contact.html" class="btn btn-primary">Get Started</a>
-        </div>
-
-        <div class="pricing-card" data-animate="slideInUp" style="animation-delay: 0.2s">
-          <h3>Enterprise</h3>
-          <p class="price">Custom</p>
-          <p class="description">For large-scale projects</p>
-          <ul class="pricing-features">
-            <li><i class="fas fa-check"></i> Complete Solution</li>
-            <li><i class="fas fa-check"></i> Custom Features</li>
-            <li><i class="fas fa-check"></i> 6+ Months Support</li>
-            <li><i class="fas fa-check"></i> Dedicated Support</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline">Contact Sales</a>
+          <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk</a>
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation"
+          >
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </button>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- CTA SECTION -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content" data-animate="fadeIn">
-        <h2>Ready to Start Your Project?</h2>
-        <p>Let's discuss your requirements and create something amazing together</p>
-        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Services</h1>
+        <p>Comprehensive solutions for your digital needs</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3 class="footer-logo">Fazal <span>Abbas</span></h3>
-          <p class="footer-description">Full-Stack Developer crafting digital experiences that make a difference.</p>
-          <div class="footer-social">
-            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <!-- SERVICES SECTION -->
+    <section class="services-grid section">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-animate="fadeIn">What I Offer</h2>
+          <p data-animate="fadeIn">
+            Professional services tailored to your project requirements
+          </p>
+        </div>
+
+        <div class="services-list">
+          <!-- Service 1 -->
+          <div class="service-card" data-animate="slideInUp">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Build powerful native and cross-platform mobile applications using
+              Flutter and React Native. Fast development, beautiful UI, and
+              seamless performance across iOS and Android.
+            </p>
+            <div class="service-features">
+              <span><i class="fas fa-check"></i> Flutter Development</span>
+              <span><i class="fas fa-check"></i> React Native</span>
+              <span><i class="fas fa-check"></i> App Deployment</span>
+              <span><i class="fas fa-check"></i> Maintenance & Support</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline btn-small"
+              >Get Started</a
+            >
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="service-card"
+            data-animate="slideInUp"
+            style="animation-delay: 0.1s"
+          >
+            <div class="service-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Create responsive, modern web applications using cutting-edge
+              technologies. From frontend design to backend architecture, I
+              deliver complete web solutions.
+            </p>
+            <div class="service-features">
+              <span><i class="fas fa-check"></i> React & MERN Stack</span>
+              <span><i class="fas fa-check"></i> Responsive Design</span>
+              <span><i class="fas fa-check"></i> SEO Optimization</span>
+              <span><i class="fas fa-check"></i> Web Performance</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline btn-small"
+              >Get Started</a
+            >
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="service-card"
+            data-animate="slideInUp"
+            style="animation-delay: 0.2s"
+          >
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Backend Development</h3>
+            <p>
+              Build scalable, secure backend systems with robust APIs.
+              Experience with Node.js, PHP Symfony, and database design for
+              enterprise applications.
+            </p>
+            <div class="service-features">
+              <span><i class="fas fa-check"></i> REST & GraphQL APIs</span>
+              <span><i class="fas fa-check"></i> Database Design</span>
+              <span><i class="fas fa-check"></i> Server Management</span>
+              <span><i class="fas fa-check"></i> Security Implementation</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline btn-small"
+              >Get Started</a
+            >
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="service-card"
+            data-animate="slideInUp"
+            style="animation-delay: 0.3s"
+          >
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Full-Stack Solutions</h3>
+            <p>
+              End-to-end development from concept to deployment. Complete web
+              and mobile application development with modern architecture and
+              best practices.
+            </p>
+            <div class="service-features">
+              <span><i class="fas fa-check"></i> Project Planning</span>
+              <span><i class="fas fa-check"></i> Architecture Design</span>
+              <span><i class="fas fa-check"></i> Development & Testing</span>
+              <span><i class="fas fa-check"></i> Deployment & Monitoring</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline btn-small"
+              >Get Started</a
+            >
+          </div>
+
+          <!-- Service 5 -->
+          <div
+            class="service-card"
+            data-animate="slideInUp"
+            style="animation-delay: 0.4s"
+          >
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>
+              Beautiful, intuitive user interfaces with exceptional user
+              experience. Design thinking approach to create engaging and
+              accessible digital products.
+            </p>
+            <div class="service-features">
+              <span><i class="fas fa-check"></i> UI Design</span>
+              <span><i class="fas fa-check"></i> User Research</span>
+              <span><i class="fas fa-check"></i> Prototyping</span>
+              <span><i class="fas fa-check"></i> Design Systems</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline btn-small"
+              >Get Started</a
+            >
+          </div>
+
+          <!-- Service 6 -->
+          <div
+            class="service-card"
+            data-animate="slideInUp"
+            style="animation-delay: 0.5s"
+          >
+            <div class="service-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <h3>Maintenance & Support</h3>
+            <p>
+              Keep your applications running smoothly with ongoing maintenance
+              and technical support. Bug fixes, performance optimization, and
+              feature updates included.
+            </p>
+            <div class="service-features">
+              <span><i class="fas fa-check"></i> Bug Fixes</span>
+              <span><i class="fas fa-check"></i> Performance Optimization</span>
+              <span><i class="fas fa-check"></i> Feature Updates</span>
+              <span><i class="fas fa-check"></i> 24/7 Support</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline btn-small"
+              >Get Started</a
+            >
           </div>
         </div>
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Services</h4>
-          <ul class="footer-links">
-            <li><a href="services.html">Mobile Development</a></li>
-            <li><a href="services.html">Web Development</a></li>
-            <li><a href="services.html">Full-Stack Solutions</a></li>
-            <li><a href="services.html">UI/UX Design</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Get In Touch</h4>
-          <ul class="footer-contact">
-            <li><i class="fas fa-envelope"></i><a href="mailto:fazalabbas2052@gmail.com">fazalabbas2052@gmail.com</a></li>
-            <li><i class="fas fa-phone"></i><a href="tel:+92321110685">+92321 1108685</a></li>
-            <li><i class="fas fa-map-marker-alt"></i><span>Multan, Pakistan</span></li>
-          </ul>
-        </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Fazal Abbas. All rights reserved.</p>
-        <p>Built with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="js/main.js"></script>
-  <script src="js/animations.js"></script>
-</body>
+    <!-- PRICING SECTION -->
+    <section class="pricing-section section">
+      <div class="container">
+        <h2 class="section-heading" data-animate="fadeIn">Flexible Pricing</h2>
+        <p class="section-subtitle" data-animate="fadeIn">
+          Choose the plan that works best for you
+        </p>
+
+        <div class="pricing-cards">
+          <div class="pricing-card" data-animate="slideInUp">
+            <h3>Starter</h3>
+            <p class="price">Custom</p>
+            <p class="description">Perfect for small projects and MVPs</p>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Single Page Application</li>
+              <li><i class="fas fa-check"></i> Basic Features</li>
+              <li><i class="fas fa-check"></i> 1 Month Support</li>
+              <li><i class="fas fa-times"></i> Unlimited Revisions</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">Inquire Now</a>
+          </div>
+
+          <div
+            class="pricing-card featured"
+            data-animate="slideInUp"
+            style="animation-delay: 0.1s"
+          >
+            <span class="badge">Popular</span>
+            <h3>Professional</h3>
+            <p class="price">Custom</p>
+            <p class="description">For scalable applications</p>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Full-Stack Application</li>
+              <li><i class="fas fa-check"></i> Advanced Features</li>
+              <li><i class="fas fa-check"></i> 3 Months Support</li>
+              <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Get Started</a>
+          </div>
+
+          <div
+            class="pricing-card"
+            data-animate="slideInUp"
+            style="animation-delay: 0.2s"
+          >
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <p class="description">For large-scale projects</p>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Complete Solution</li>
+              <li><i class="fas fa-check"></i> Custom Features</li>
+              <li><i class="fas fa-check"></i> 6+ Months Support</li>
+              <li><i class="fas fa-check"></i> Dedicated Support</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content" data-animate="fadeIn">
+          <h2>Ready to Start Your Project?</h2>
+          <p>
+            Let's discuss your requirements and create something amazing
+            together
+          </p>
+          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-logo">Fazal <span>Abbas</span></h3>
+            <p class="footer-description">
+              Full-Stack Developer crafting digital experiences that make a
+              difference.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://twitter.com/yourusername"
+                target="_blank"
+                aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="mailto:your.email@example.com" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html">Mobile Development</a></li>
+              <li><a href="services.html">Web Development</a></li>
+              <li><a href="services.html">Full-Stack Solutions</a></li>
+              <li><a href="services.html">UI/UX Design</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Get In Touch</h4>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-envelope"></i
+                ><a href="mailto:fazalabbas2052@gmail.com"
+                  >fazalabbas2052@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-phone"></i
+                ><a href="tel:+92321110685">+92321 1108685</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i
+                ><span>Multan, Pakistan</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Fazal Abbas. All rights reserved.</p>
+          <p>
+            Built with <i class="fas fa-heart"></i> and lots of
+            <i class="fas fa-coffee"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
 </html>
