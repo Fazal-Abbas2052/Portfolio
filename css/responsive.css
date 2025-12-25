@@ -532,7 +532,7 @@
 /* Dark Mode Support (Optional) */
 @media (prefers-color-scheme: dark) {
   /* Uncomment if you want automatic dark mode */
-  /*
+/*   
   :root {
     --color-bg: #1a1a1a;
     --color-text: #e0e0e0;
