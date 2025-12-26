@@ -61,7 +61,7 @@
   margin-bottom: 3rem;
 }
 
-.portfolio-card {
+.project-card {
   background: white;
   border-radius: 15px;
   overflow: hidden;
@@ -70,7 +70,7 @@
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.portfolio-card:hover {
+.project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 50px rgba(99, 102, 241, 0.15);
 }
@@ -88,7 +88,7 @@
   transition: transform 0.3s ease;
 }
 
-.portfolio-card:hover .portfolio-image img {
+.project-card:hover .portfolio-image img {
   transform: scale(1.1);
 }
 
@@ -103,7 +103,7 @@
   transition: opacity 0.3s ease;
 }
 
-.portfolio-card:hover .portfolio-overlay {
+.project-card:hover .portfolio-overlay {
   opacity: 1;
 }
 
@@ -178,6 +178,6 @@
 }
 
 /* Hidden by default, shown by filter */
-.portfolio-card.hidden {
+.project-card.hidden {
   display: none;
 }
