@@ -1,20 +1,8 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "js/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node js/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "description": "Portfolio with serverless backend",
   "dependencies": {
-    "@emailjs/nodejs": "^5.0.2",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1"
+    "@emailjs/nodejs": "^5.0.2"
   }
 }
