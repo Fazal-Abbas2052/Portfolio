@@ -52,16 +52,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 3000);
 
       // You can also send data to an API endpoint:
-      // fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(formData)
-      // })
-      // .then(response => response.json())
-      // .then(data => console.log('Success:', data))
-      // .catch((error) => console.error('Error:', error));
+      fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => response.json())
+        .then((data) => console.log("Success:", data))
+        .catch((error) => console.error("Error:", error));
     });
   }
 });

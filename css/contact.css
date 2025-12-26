@@ -131,7 +131,7 @@
 
 .social-icons a:hover {
   background: var(--primary-color);
-  color: white;
+  color: #b17457;
   transform: translateY(-3px);
 }
 
