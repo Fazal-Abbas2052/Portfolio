@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 3000);
 
       // You can also send data to an API endpoint:
-      fetch("http://localhost:5000/api/contact", {
+      fetch("https://portfolio-mkre.vercel.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
